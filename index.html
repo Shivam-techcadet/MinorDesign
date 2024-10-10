@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Classroom Management Software</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar with Login/Signup Button -->
+        <header>
+            <h1>Smart Classroom Management Software</h1>
+            <nav>
+                <button onclick="window.location.href='loginSignup.html';">Login/Signup</button>
+            </nav>
+        </header>
+        
+        <!-- Attendance Automation Section -->
+        <section id="attendance-section">
+            <h2>Attendance Automation</h2>
+            <p>Check-in via facial recognition or mobile app.</p>
+            <button onclick="facialRecognition()">Facial Recognition Check-in</button>
+            <button onclick="mobileAppCheckIn()">Mobile App Check-in</button>
+
+            <!-- Real-time attendance dashboard -->
+            <div id="attendance-dashboard">
+                <h3>Real-time Attendance Report</h3>
+                <table id="attendanceTable" border="1">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Check-in Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Attendance records will appear here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Resource Management Section -->
+        <section id="resource-section">
+            <h2>Resource Management</h2>
+            <p>Track smart board usage and classroom maintenance schedules.</p>
+            <button onclick="scheduleResources()">Schedule Smart Board</button>
+            <button onclick="viewMaintenance()">View Maintenance Schedule</button>
+            <div id="resource-status"></div>
+        </section>
+
+        <!-- Safety and Security Section -->
+        <section id="security-section">
+            <h2>Safety and Security Alerts</h2>
+            <p>Link with security systems for real-time emergency alerts.</p>
+            <button onclick="integrateSecurity()">Link Security Systems</button>
+            <button onclick="sendEmergencyAlert()">Send Emergency Alert</button>
+            <div id="security-status"></div>
+        </section>
+
+        <!-- Interactive Learning Tools Section -->
+        <section id="interactive-tools-section">
+            <h2>Interactive Learning Tools</h2>
+            <p>Integrate smart boards for real-time lesson plans and collect student feedback.</p>
+            <button onclick="displayOnSmartBoard()">Display on Smart Board</button>
+            <button onclick="collectFeedback()">Collect Student Feedback</button>
+            <div id="feedback-data"></div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Smart Classroom Management Software</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

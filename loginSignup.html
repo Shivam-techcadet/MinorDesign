@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login/Signup</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Classroom Management</h1>
+        
+        <!-- Login Section -->
+        <div class="form-container" id="login-form">
+            <h2>Login</h2>
+            <form id="login">
+                <label for="email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign up</a></p>
+        </div>
+
+        <!-- Signup Section -->
+        <div class="form-container" id="signup-form" style="display: none;">
+            <h2>Signup</h2>
+            <form id="signup">
+                <label for="name">Name:</label>
+                <input type="text" id="signup-name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="signup-email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+                <button type="submit">Signup</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+        </div>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
