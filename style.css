@@ -1,56 +1,323 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #abc0f8;
-    padding: 20px;
-}
-
-h2 {
-    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #FFE5B4;
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
+    width: 80%;
+    margin: auto;
 }
 
-button {
-    background-color: #4CAF50;
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #97d8d5;
     color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid #89e9f0;
+    color: #c9a1f7;
     cursor: pointer;
-    margin-top: 10px;
-    margin-right: 5px;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background-color: #7cdfd2;
+    color: white;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #4CAF50;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
+/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
-table th, table td {
-    padding: 10px;
+table, th, td {
     border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
     text-align: left;
 }
 
-#resource-status, #feedback-data, #security-status {
-    margin-top: 15px;
+th {
+    background-color: #4CAF50;
+    color: white;
 }
 
-@media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
+/* File Upload Section */
+#notes-status {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4CAF50;
+}
 
-    button {
-        width: 100%;
-        margin: 10px 0;
-    }
+/* Student Report Section */
+#report-summary {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Chatbot Styling */
+#chatbot-interface {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#chatbox {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#chatbox p {
+    margin: 5px 0;
+}
+
+#chatInput {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#chatInput:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+#chatbot-interface button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#chatbot-interface button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.card-container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Card Style */
+.card {
+    padding: 20px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* File Upload Section */
+#notes-status {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Student Report Section */
+#report-summary {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Chatbot Styling */
+#chatbot-interface {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#chatbox {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#chatbox p {
+    margin: 5px 0;
+}
+
+#chatInput {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#chatInput:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+#chatbot-interface button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 0 8px 8px;
+}
+
+footer p {
+    margin: 0;
 }
